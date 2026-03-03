@@ -38,10 +38,10 @@ for weight in weights_to_test:
         for i in rec:
             if i["name"] == expected_pair:
                 curr_score += 1
-        print(f"Weight {weight:.1f} scored: {curr_score}/{len(shows_pairs)}")
+        print(f"Weight {weight} scored: {curr_score}/{len(shows_pairs)}")
         if curr_score >= best_score:
             best_score = curr_score
             best_weight = weight
 
 print(f"\nOptimization Complete!")
-print(f"Best weight multiplier is: {best_weight:.1f} (Score: {best_score})")
+print(f"Best weight multiplier is: {best_weight} (Score: {best_score})")
